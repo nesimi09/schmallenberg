@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geschichte - Schmallenberg</title>
+<link rel="stylesheet" href="../CSS/style.css">
+<style>
+  .geschichte-hero {
+    text-align: center;
+    padding: clamp(50px, 10vw, 120px) clamp(20px, 5vw, 80px) clamp(30px, 5vw, 60px);
+    background-color: white;
+  }
+
+  .geschichte-hero h1 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(32px, 6vw, 72px);
+    color: rgb(186, 37, 54);
+    margin-bottom: 12px;
+  }
+
+  .geschichte-hero .untertitel {
+    font-size: clamp(14px, 2vw, 20px);
+    color: rgb(120, 120, 120);
+    font-family: "Times New Roman", Times, serif;
+    font-style: italic;
+  }
+
+  .timeline {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: clamp(30px, 6vw, 80px) clamp(20px, 5vw, 60px);
+  }
+
+  .timeline-item {
+    display: flex;
+    gap: clamp(20px, 4vw, 50px);
+    margin-bottom: clamp(32px, 5vw, 56px);
+    align-items: flex-start;
+  }
+
+  .timeline-jahr {
+    min-width: clamp(60px, 8vw, 100px);
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(16px, 2.2vw, 26px);
+    font-weight: 700;
+    color: rgb(186, 37, 54);
+    padding-top: 3px;
+    text-align: right;
+  }
+
+  .timeline-linie {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6px;
+  }
+
+  .timeline-punkt {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: rgb(186, 37, 54);
+    flex-shrink: 0;
+  }
+
+  .timeline-strich {
+    width: 2px;
+    flex: 1;
+    min-height: 40px;
+    background-color: rgba(186, 37, 54, 0.2);
+    margin-top: 4px;
+  }
+
+  .timeline-text {
+    flex: 1;
+    font-family: "Times New Roman", Times, serif;
+    font-size: clamp(14px, 1.6vw, 18px);
+    line-height: 1.8;
+    color: rgb(60, 60, 60);
+    padding-top: 0;
+  }
+
+  .timeline-text strong {
+    display: block;
+    font-size: clamp(15px, 1.8vw, 20px);
+    color: rgb(186, 37, 54);
+    margin-bottom: 6px;
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .timeline-item:last-child .timeline-strich {
+    display: none;
+  }
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html" class="logo-link">
+    <img src="../Bilder/wappen.svg" alt="Wappen" class="logo-img" onerror="this.style.display='none';">
+  </a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul class="navbar-always">
+    <li><a href="https://stadt-schmallenberg.net/impressum.html">Impressum</a></li>
+    <li><a href="https://stadt-schmallenberg.net/datenschutz.html">Datenschutz</a></li>
+  </ul>
+    <ul class="menu">
+    <li><a href="../index.html">Startseite</a></li>
+    <li><a href="Geschichte.html" class="active">Geschichte</a></li>
+    <li><a href="Galerie.html">Galerie</a></li>
+    <li><a href="Sehenswuerdigkeiten.html">Sehensw&uuml;rdigkeiten</a></li>
+    <li><a href="Vereine.html">Vereine</a></li>
+    <li><a href="Tradition.html">Traditionen</a></li>
+    <li><a href="Wilzenberg.html">Wilzenberg</a></li>
+    <li><a href="Stadtbrand.html">Der Stadtbrand</a></li>
+    <li><a href="Entdecken.html">Entdecken</a></li>
+  </ul>
+</nav>
+
+<div class="geschichte-hero">
+  <h1>Die Geschichte von Schmallenberg</h1>
+</div>
+
+<div class="timeline">
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1072</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Kloster Grafschaft</strong>
+      Benediktinerm&Ouml;nche gr&uuml;nden das Kloster Grafschaft am Fu&szlig;e des Wilzenbergs.
+      Es ist der erste wichtige Schritt f&uuml;r die Entstehung der Stadt.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">~1200</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Die Smale Burg</strong>
+      Der Erzbischof von K&ouml;ln l&auml;sst auf einem schmalen Bergr&uuml;cken eine kleine Burg
+      bauen, die „Smale Burg". Sie soll das Kloster Grafschaft sch&uuml;tzen.
+      Aus ihrem Namen entstand sp&auml;ter der Name Schmallenberg.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1244</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Stadtrechte</strong>
+      Der K&ouml;lner Erzbischof Konrad von Hochstaden verleiht Schmallenberg offiziell
+      die Stadtrechte. Die Stadt bekommt ein Marktrecht, eine eigene Gerichtsbarkeit
+      und sogar ein M&uuml;nzrecht – f&uuml;r so eine kleine Stadt echt beeindruckend.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">Mittelalter</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Mitglied der Hanse</strong>
+      Schmallenberg wird Mitglied der Hanse, einem riesigen Handelsnetzwerk.
+      Die Stadt w&auml;chst und wird ein wichtiger Handelsplatz in der Region.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1816</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Schmallenberg wird preu&szlig;isch</strong>
+      Nach den napoleonischen Kriegen f&auml;llt das Herzogtum Westfalen und
+      damit Schmallenberg an Preu&szlig;en.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1822</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Der gro&szlig;e Stadtbrand</strong>
+      Richtig schlimm wird es 1822, als fast die komplette Stadt durch einen Brand
+      zerst&ouml;rt wird. Von allen H&auml;usern bleiben gerade mal 17 stehen. Danach wird
+      Schmallenberg komplett neu aufgebaut, nach einem richtigen Plan im
+      klassizistischen Stil. Deshalb sehen alle H&auml;user in der Altstadt heute
+      noch so einheitlich aus.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">~1850</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Textilindustrie</strong>
+      Die Textilindustrie entwickelt sich und pr&auml;gt das wirtschaftliche Leben
+      der Stadt. Bekannte Firmen wie FALKE haben hier ihre Wurzeln.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1938</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Novemberpogrome</strong>
+      W&auml;hrend der Novemberpogrome wird die Synagoge in Schmallenberg zerst&ouml;rt.
+      Viele j&uuml;dische Einwohner, die seit dem 17. Jahrhundert hier lebten, werden
+      Opfer nationalsozialistischer Verfolgung. Stolpersteine und Gedenktafeln
+      erinnern heute an sie.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1945</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Ende des Zweiten Weltkriegs</strong>
+      Schmallenberg wird von amerikanischen Truppen eingenommen, wobei es
+      heftige K&auml;mpfe gibt. Nach dem Krieg beginnt langsam der Wiederaufbau.
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-jahr">1975</div>
+    <div class="timeline-linie">
+      <div class="timeline-punkt"></div>
+      <div class="timeline-strich"></div>
+    </div>
+    <div class="timeline-text">
+      <strong>Gebietsreform</strong>
+      Durch die kommunale Neugliederung werden viele umliegende Gemeinden
+      eingegliedert. Seither erstreckt sich das Stadtgebiet &uuml;ber mehr als
+      300 Quadratkilometer, was Schmallenberg zur fl&auml;chengr&ouml;&szlig;ten
+      kreisangeh&ouml;rigen Stadt in NRW macht.
+    </div>
+  </div>
+
+</div>
+
+<script src="../CSS/navbar.js"></script>
+<script>
+
+  fetch("/counter.php?page=" + encodeURIComponent(window.location.pathname))
+  
+  .then(response => response.json())
+  
+  .then(data => {
+  
+  })
+  
+  .catch(error => {
+  
+  });
+  
+  </script>
+</body>
+</html>

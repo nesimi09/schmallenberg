@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galerie – Schmallenberg</title>
+<link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<nav class="navbar">
+<a href="../index.html" class="logo-link">
+<img src="../Bilder/Wappen.svg" alt="Wappen" class="logo-img" onerror="this.style.display='none';">
+</a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul class="navbar-always">
+    <li><a href="https://stadt-schmallenberg.net/impressum.html">Impressum</a></li>
+    <li><a href="https://stadt-schmallenberg.net/datenschutz.html">Datenschutz</a></li>
+  </ul>
+    <ul class="menu">
+<li><a href="../index.html">Startseite</a></li>
+<li><a href="Geschichte.html">Geschichte</a></li>
+<li><a href="Galerie.html" class="active">Galerie</a></li>
+<li><a href="Sehenswuerdigkeiten.html">Sehensw&uuml;rdigkeiten</a></li>
+<li><a href="Vereine.html">Vereine</a></li>
+<li><a href="Tradition.html">Traditionen</a></li>
+<li><a href="Wilzenberg.html">Wilzenberg</a></li>
+<li><a href="Stadtbrand.html">Der Stadtbrand</a></li>
+<li><a href="Entdecken.html">Entdecken</a></li>
+</ul>
+</nav>
+<script src="../CSS/navbar.js"></script>
+<div class="galerie-hero">
+<h1>Galerie</h1>
+</div>
+<main class="gallery-section">
+<div id="gallery" class="gallery-grid" aria-live="polite"></div>
+</main>
+<div id="lightbox" class="lightbox" aria-hidden="true">
+<button id="lb-fullscreen" class="lb-fullscreen" aria-label="Vollbild" title="Vollbild">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>
+</button>
+<button id="lb-close" class="lb-close" aria-label="Schlie&szlig;en" title="Schlie&szlig;en">✕</button>
+<div class="lb-stage">
+<img id="lb-prev-thumb" class="lb-thumb lb-thumb-prev" src="" alt="Voriges Bild">
+<button id="lb-prev" class="lb-nav lb-prev" aria-label="Voriges Bild">
+<svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+</button>
+<div class="lb-inner">
+<img id="lb-img" src="" alt="" class="lb-img">
+<div id="lb-caption" class="lb-caption"></div>
+</div>
+<button id="lb-next" class="lb-nav lb-next" aria-label="N&auml;chstes Bild">
+<svg viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</button>
+<img id="lb-next-thumb" class="lb-thumb lb-thumb-next" src="" alt="N&auml;chstes Bild">
+</div>
+</div>
+<script src="../CSS/gallery.js"></script>
+<script>
+
+  fetch("/counter.php?page=" + encodeURIComponent(window.location.pathname))
+  
+  .then(response => response.json())
+  
+  .then(data => {
+  
+  })
+  
+  .catch(error => {
+  
+  });
+  
+  </script>
+</body>
+</html>

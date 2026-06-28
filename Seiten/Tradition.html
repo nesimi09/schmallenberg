@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traditionen - Schmallenberg</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    .tradition-hero {
+      text-align: center;
+      padding: clamp(50px, 10vw, 110px) clamp(20px, 5vw, 80px) clamp(20px, 4vw, 40px);
+      background: white;
+    }
+    .tradition-hero h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(32px, 6vw, 68px);
+      color: rgb(186, 37, 54);
+      margin-bottom: 10px;
+    }
+
+    .tradition-prose {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 5vw, 80px) clamp(60px, 10vw, 100px);
+      font-family: "Times New Roman", Times, serif;
+      color: rgb(60, 60, 60);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      text-align: left;
+    }
+
+    .tradition-prose p + p {
+      margin-top: 1rem;
+    }
+
+    .tradition-natur-bild {
+      margin: 1.6rem 0;
+    }
+
+    .tradition-natur-bild img {
+      width: 100%;
+      max-height: 480px;
+      object-fit: cover;
+      border-radius: 12px;
+      display: block;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html" class="logo-link">
+    <img src="../Bilder/Wappen.svg" alt="Wappen" class="logo-img" onerror="this.style.display='none';">
+  </a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul class="navbar-always">
+    <li><a href="https://stadt-schmallenberg.net/impressum.html">Impressum</a></li>
+    <li><a href="https://stadt-schmallenberg.net/datenschutz.html">Datenschutz</a></li>
+  </ul>
+    <ul class="menu">
+    <li><a href="../index.html">Startseite</a></li>
+    <li><a href="Geschichte.html">Geschichte</a></li>
+    <li><a href="Galerie.html">Galerie</a></li>
+    <li><a href="Sehenswuerdigkeiten.html">Sehensw&uuml;rdigkeiten</a></li>
+    <li><a href="Vereine.html">Vereine</a></li>
+    <li><a href="Tradition.html" class="active">Traditionen</a></li>
+    <li><a href="Wilzenberg.html">Wilzenberg</a></li>
+    <li><a href="Stadtbrand.html">Der Stadtbrand</a></li>
+    <li><a href="Entdecken.html">Entdecken</a></li>
+  </ul>
+</nav>
+<script src="../CSS/navbar.js"></script>
+
+<div class="tradition-hero">
+  <h1>Traditionen in Schmallenberg</h1>
+</div>
+
+<div class="tradition-prose">
+  <p>
+    Traditionen haben in Schmallenberg schon seit vielen Jahren einen wichtigen
+    Platz. Sie verbinden die Menschen und sorgen dafür, dass alte Br&auml;uche auch
+    heute noch weitergeführt werden. Viele Traditionen werden von Generation zu
+    Generation weitergegeben und geh&ouml;ren fest zum Leben in der Region.
+  </p>
+  <p>
+    Besonders bekannt sind die Sch&uuml;tzenfeste. In vielen Orten rund um
+    Schmallenberg kommen jedes Jahr viele Menschen zusammen, um gemeinsam zu
+    feiern. Diese Feste sind f&uuml;r viele Familien und Vereine ein wichtiger Teil
+    des Jahres. Musik, gemeinsame Aktivit&auml;ten und das Treffen mit Freunden und
+    Nachbarn stehen dabei im Mittelpunkt.
+  </p>
+  <p>
+    Auch M&auml;rkte und Veranstaltungen geh&ouml;ren zu den Traditionen. Der
+    Weihnachtsmarkt in der Altstadt zieht jedes Jahr viele Besucher an und sorgt
+    mit Lichtern und kleinen St&auml;nden f&uuml;r eine besondere Stimmung.
+    Au&szlig;erdem finden regelm&auml;&szlig;ig Stadtfeste und andere
+    Veranstaltungen statt, bei denen Menschen aus der Region zusammenkommen.
+  </p>
+  <p>
+    Eine weitere Tradition ist die enge Verbindung zur Natur. Wandern geh&ouml;rt
+    im Schmallenberger Sauerland seit langer Zeit dazu. Viele Menschen verbringen
+    ihre Freizeit in den Bergen und W&auml;ldern oder erkunden die Region auf den
+    zahlreichen Wanderwegen.
+  </p>
+
+  <div class="tradition-natur-bild">
+    <img src="../Bilder/Bilder/IMG_5146.jpeg" alt="Natur im Schmallenberger Sauerland" loading="lazy" decoding="async">
+  </div>
+  <p>
+    Auch Handwerk und regionale Arbeit haben die Geschichte Schmallenbergs
+    gepr&auml;gt. Fr&uuml;her spielte besonders die Textilherstellung eine
+    wichtige Rolle. Bis heute erinnern verschiedene Orte und Geschichten an diese
+    Zeit.
+  </p>
+  <p>
+    Traditionen machen Schmallenberg zu einem besonderen Ort. Sie zeigen die
+    Geschichte der Stadt und bringen Menschen zusammen. Gleichzeitig verbinden
+    sie Vergangenheit und Gegenwart und bleiben ein wichtiger Teil des Lebens in
+    Schmallenberg.
+  </p>
+</div>
+
+<script>
+
+  fetch("/counter.php?page=" + encodeURIComponent(window.location.pathname))
+  
+  .then(response => response.json())
+  
+  .then(data => {
+  
+  })
+  
+  .catch(error => {
+  
+  });
+  
+  </script>
+</body>
+</html>

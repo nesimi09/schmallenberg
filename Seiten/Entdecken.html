@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entdecken – Schmallenberg</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    
+    .img-wrap {
+      cursor: zoom-in;
+    }
+
+    .img-wrap img {
+      cursor: zoom-in;
+      transition: transform 0.2s ease;
+    }
+
+    .img-wrap:hover img {
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html" class="logo-link">
+    <img src="../Bilder/Wappen.svg" alt="Wappen" class="logo-img" onerror="this.style.display='none';">
+  </a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul class="navbar-always">
+    <li><a href="https://stadt-schmallenberg.net/impressum.html">Impressum</a></li>
+    <li><a href="https://stadt-schmallenberg.net/datenschutz.html">Datenschutz</a></li>
+  </ul>
+    <ul class="menu">
+    <li><a href="../index.html">Startseite</a></li>
+    <li><a href="Geschichte.html">Geschichte</a></li>
+    <li><a href="Galerie.html">Galerie</a></li>
+    <li><a href="Sehenswuerdigkeiten.html">Sehensw&uuml;rdigkeiten</a></li>
+    <li><a href="Vereine.html">Vereine</a></li>
+    <li><a href="Tradition.html">Traditionen</a></li>
+    <li><a href="Wilzenberg.html">Wilzenberg</a>
+      <li><a href="Stadtbrand.html">Der Stadtbrand</a></li>
+      <li><a href="Entdecken.html" class="active">Entdecken</a></li>
+  </ul>
+</nav>
+<script src="../CSS/navbar.js"></script>
+
+<div class="vergleich-hero">
+  <h1>Die Kernstadt Schmallenberg im Wandel der Zeit</h1>
+  <p>Fr&uuml;her und heute &ndash; ein Blick auf den historischen Stadtkern</p>
+</div>
+
+<section class="vergleich-section wahlseiten">
+
+  <div class="vergleich-paar">
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/1984-Schmallenberg/StadtarchivSchmallenberg(Nr268b)-Schmallenberg1984.jpg" alt="Schmallenberg 1984 – Nr. 268b" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge fruher">Fr&uuml;her · 1984</span>
+        <p>Schmallenberg (1984)<br>Fotograf: Friedhelm Ackermann<br>Bildquelle: Stadtarchiv Schmallenberg (Inv-Nr 268b)<br>Genehmigung zur Ver&ouml;ffentlichung M&auml;rz 2026</p>
+      </div>
+    </div>
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/Bilder/IMG_1756.jpeg" alt="Schmallenberg heute" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge heute">Heute</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="paar-trennlinie">
+
+  <div class="vergleich-paar">
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/1984-Schmallenberg/StadtarchivSchmallenberg(Nr256)-Schmallenberg1984.jpg" alt="Schmallenberg 1984 – Nr. 256" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge fruher">Fr&uuml;her · 1984</span>
+        <p>Schmallenberg (1984)<br>Fotograf: Friedhelm Ackermann<br>Bildquelle: Stadtarchiv Schmallenberg (Inv-Nr 256)<br>Genehmigung zur Ver&ouml;ffentlichung M&auml;rz 2026</p>
+      </div>
+    </div>
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/Bilder/IMG_5144.jpeg" alt="Schmallenberg heute" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge heute">Heute</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="paar-trennlinie">
+
+  <div class="vergleich-paar">
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/1984-Schmallenberg/StadtarchivSchmallenberg(Nr266b)-Schmallenberg1984.jpg" alt="Schmallenberg 1984 – Nr. 266b" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge fruher">Fr&uuml;her · 1984</span>
+        <p>Schmallenberg (1984)<br>Fotograf: Friedhelm Ackermann<br>Bildquelle: Stadtarchiv Schmallenberg (Inv-Nr 266b)<br>Genehmigung zur Ver&ouml;ffentlichung M&auml;rz 2026</p>
+      </div>
+    </div>
+    <div class="bild-card">
+      <div class="img-wrap">
+        <img src="../Bilder/Bilder/IMG_5145.jpeg" alt="Schmallenberg heute" loading="lazy" decoding="async">
+      </div>
+      <div class="bild-info">
+        <span class="zeit-badge heute">Heute</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div id="lightbox" class="lightbox" aria-hidden="true">
+  <button id="lb-fullscreen" class="lb-fullscreen" aria-label="Vollbild" title="Vollbild">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3H5a2 2 0 0 0-2 2v3"></path><path d="M21 8V5a2 2 0 0 0-2-2h-3"></path><path d="M3 16v3a2 2 0 0 0 2 2h3"></path><path d="M16 21h3a2 2 0 0 0 2-2v-3"></path></svg>
+  </button>
+  <button id="lb-close" class="lb-close" aria-label="Schlie&szlig;en" title="Schlie&szlig;en">✕</button>
+  <div class="lb-inner">
+    <img id="lb-img" src="" alt="" class="lb-img">
+    <div id="lb-caption" class="lb-caption"></div>
+  </div>
+</div>
+
+<script src="../CSS/navbar.js"></script>
+<script src="../CSS/wahlseiten.js"></script>
+
+</body>
+</html>

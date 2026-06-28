@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Der Stadtbrand - Schmallenberg</title>
+  <link rel="stylesheet" href="../CSS/style.css">
+  <style>
+    .stadtbrand-hero {
+      text-align: center;
+      padding: clamp(50px, 10vw, 110px) clamp(20px, 5vw, 80px) clamp(20px, 4vw, 40px);
+      background: white;
+    }
+    .stadtbrand-hero h1 {
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(28px, 5.5vw, 60px);
+      color: rgb(186, 37, 54);
+      margin-bottom: 10px;
+      line-height: 1.25;
+    }
+    .stadtbrand-hero p {
+      font-family: "Times New Roman", Times, serif;
+      font-size: clamp(14px, 1.8vw, 18px);
+      color: rgb(110, 110, 110);
+      font-style: italic;
+      margin: 0;
+    }
+
+    .stadtbrand-prose {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 clamp(20px, 5vw, 80px) clamp(60px, 10vw, 100px);
+      font-family: "Times New Roman", Times, serif;
+      color: rgb(60, 60, 60);
+      font-size: 1.05rem;
+      line-height: 1.85;
+      text-align: left;
+    }
+
+    .stadtbrand-prose h2 {
+      font-size: clamp(24px, 3.6vw, 34px);
+      color: rgb(186, 37, 54);
+      margin: 50px 0 16px;
+    }
+
+    .stadtbrand-prose h2:first-of-type {
+      margin-top: 0;
+    }
+
+    .stadtbrand-prose p + p {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar">
+  <a href="../index.html" class="logo-link">
+    <img src="../Bilder/Wappen.svg" alt="Wappen" class="logo-img" onerror="this.style.display='none';">
+  </a>
+  <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+  </button>
+
+  <ul class="navbar-always">
+    <li><a href="https://stadt-schmallenberg.net/impressum.html">Impressum</a></li>
+    <li><a href="https://stadt-schmallenberg.net/datenschutz.html">Datenschutz</a></li>
+  </ul>
+    <ul class="menu">
+    <li><a href="../index.html">Startseite</a></li>
+    <li><a href="Geschichte.html">Geschichte</a></li>
+    <li><a href="Galerie.html">Galerie</a></li>
+    <li><a href="Sehenswuerdigkeiten.html">Sehensw&uuml;rdigkeiten</a></li>
+    <li><a href="Vereine.html">Vereine</a></li>
+    <li><a href="Tradition.html">Traditionen</a></li>
+    <li><a href="Wilzenberg.html">Wilzenberg</a></li>
+    <li><a href="Stadtbrand.html" class="active">Der Stadtbrand</a></li>
+    <li><a href="Entdecken.html">Entdecken</a></li>
+  </ul>
+</nav>
+<script src="../CSS/navbar.js"></script>
+
+<div class="stadtbrand-hero">
+  <h1>Der Stadtbrand von 1822 in Schmallenberg</h1>
+</div>
+
+<div class="stadtbrand-prose">
+
+  <h2>Der Stadtbrand von 1822</h2>
+  <p>
+    Am 31. Oktober 1822 wurde die Stadt Schmallenberg von einer schweren Katastrophe
+    getroffen. Am Vormittag brach in der unteren Stadt ein Feuer aus, das sich durch
+    starken Wind rasend schnell ausbreitete. Innerhalb k&uuml;rzester Zeit griffen die
+    Flammen auf gro&szlig;e Teile der Stadt &uuml;ber.
+  </p>
+  <p>
+    Trotz schneller Hilfe aus umliegenden Orten war es kaum m&ouml;glich, das Feuer zu
+    stoppen. Das Wasser reichte nicht aus, und die Flammen breiteten sich unaufhaltsam
+    durch die Stra&szlig;en aus. In nur etwa zwei Stunden wurden 131 H&auml;user zerst&ouml;rt.
+    Viele Menschen konnten nur ihr wichtigstes Hab und Gut retten und mussten anschlie&szlig;end
+    im Freien oder in benachbarten D&ouml;rfern Zuflucht suchen. Auch das Vieh geriet in
+    Panik und lief unkontrolliert &uuml;ber die Felder.
+  </p>
+  <p>
+    Der Stadtbrand von 1822 z&auml;hlt zu den schwersten Katastrophen in der Geschichte
+    Schmallenbergs und ver&auml;nderte das Stadtbild nachhaltig.
+  </p>
+
+  <h2>Gedenken 200 Jahre sp&auml;ter</h2>
+  <p>
+    Im Jahr 2022 erinnerte Schmallenberg an dieses Ereignis mit einer besonderen
+    Gedenkveranstaltung. Im Rahmen einer Stadtf&uuml;hrung wurde der Verlauf des Brandes
+    anschaulich nachgestellt. Feuerwehrkr&auml;fte aus Schmallenberg und Grafschaft
+    inszenierten gemeinsam eine symbolische L&ouml;schung des Feuers mit historischem
+    und modernem Ger&auml;t.
+  </p>
+  <p>
+    Anschlie&szlig;end fand in der Stadthalle ein feierlicher Gedenkakt statt, bei dem
+    an die Ereignisse von 1822 erinnert wurde. So wurde deutlich, wie stark dieser
+    Brand die Geschichte der Stadt gepr&auml;gt hat und bis heute im Bewusstsein der
+    Menschen bleibt.
+  </p>
+
+</div>
+
+<script>
+
+  fetch("/counter.php?page=" + encodeURIComponent(window.location.pathname))
+  
+  .then(response => response.json())
+  
+  .then(data => {
+  
+  })
+  
+  .catch(error => {
+  
+  });
+  
+  </script>
+</body>
+</html>
